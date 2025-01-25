@@ -74,7 +74,7 @@ async def send_video_with_chat_id(client, sender, path, caption, duration, hi, w
             progress=progress_for_pyrogram,
             progress_args=(
                 client,
-                '**__Uploading: [Legend Union](https://t.me/LegendBotzs)__**\n ',
+                '**__Uploading: [LUCIFER](https://t.me/LP_LUCIFER)__**\n ',
                 upm,
                 time.time()
             )
@@ -97,7 +97,7 @@ async def send_document_with_chat_id(client, sender, path, caption, thumb_path, 
             progress=progress_for_pyrogram,
             progress_args=(
                 client,
-                '**__Uploading:__**\n**__Bot made by [Legend Union](https://t.me/LegendBotzs)__**',
+                '**__Uploading:__**\n**__Bot made by [LUCIFER](https://t.me/LP_LUCIFER)__**',
                 upm,
                 time.time()
             )
@@ -256,7 +256,7 @@ async def get_msg(userbot, client, sender, edit_id, msg_link, i, file_n):
                     logging.info(e)
                     thumb_path = None
                 
-                caption = f"{msg.caption}\n\n__Unrestricted by **[Legend Union](https://t.me/LegendBotzs)**__" if msg.caption else "__Unrestricted by **[Legend Union](https://t.me/LegendBotzs)**__"
+                caption = f"{msg.caption}\n\n__Unrestricted by **[LP_LUCIFER](https://t.me/LP_LUCIFER)**__" if msg.caption else "__Unrestricted by **[LUCIFER](https://t.me/LP_LUCIFER)**__"
                 await send_video_with_chat_id(client, sender, path, caption, duration, hi, wi, thumb_path, upm)
             elif str(file).split(".")[-1] in ['jpg', 'jpeg', 'png', 'webp']:
                 if file_n != '':
@@ -270,7 +270,7 @@ async def get_msg(userbot, client, sender, edit_id, msg_link, i, file_n):
                     file = path
 
                 
-                caption = f"{msg.caption}\n\n__Unrestricted by **[Legend Union](https://t.me/LegendBotzs)**__" if msg.caption else "__Unrestricted by **[Legend Union](https://t.me/LegendBotzs)**__"
+                caption = f"{msg.caption}\n\n__Unrestricted by **[LUCIFER](https://t.me/LP_LUCIFER)**__" if msg.caption else "__Unrestricted by **[LUCIFER](https://t.me/LP_LUCIFER)**__"
                 await upm.edit("__Uploading photo...__")
 
                 await bot.send_file(sender, path, caption=caption)
